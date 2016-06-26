@@ -1,0 +1,6 @@
+par(mar = c(4,4,4,4))
+plot(x = HPCs$datetime, y = HPCs$Sub_metering_1,type = "l", xlab = "", ylab = "Sub Metering", ylim = c(0,40))
+par(new = F)
+lines(HPCs$datetime, HPCs$Sub_metering_2, col = "red")
+lines(HPCs$datetime, HPCs$Sub_metering_3, col = "blue")
+legend("topright", c("1","2","3"),lty = c(1,1,1), col = c("black","red","blue")) 
